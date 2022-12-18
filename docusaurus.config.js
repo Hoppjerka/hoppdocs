@@ -6,19 +6,22 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '🦘 Hoppsite',
-  tagline: 'Software is cool',
-  url: 'https://hopporg-website-docusaurus.vercel.app/',
-  baseUrl: '/',
+  title: 'Hoppdocs',
+  tagline: '',
+  url: 'https://hoppjerka.github.io',
+  baseUrl: 'hoppdocs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  //favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Hopporg', // Usually your GitHub org/user name.
-  projectName: 'Hoppsite', // Usually your repo name.
-
+  organizationName: 'hoppjerka', // Usually your GitHub org/user name.
+  projectName: 'hoppdocs', // Usually your repo name.
+  //deploymentBranch: 'gh-pages', // Default value
+  trailingSlash: true,
+  
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -55,15 +58,15 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Hopporg/hopporg-website-docusaurus',
+            'https://github.com/hoppjerka/hoppdocs',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Hopporg/hopporg-website-docusaurus',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //         'https://github.com/hoppjerka/hoppdocs',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -75,7 +78,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Testing',
+        title: 'Hoppdocs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -111,19 +114,19 @@ const config = {
             label: 'Tools',
             position: 'left',
           },
-          {
-            to: '/pw/reporter', //custom page with iframe - Works best
-            label: 'custom page',
-            position: 'left',
-          },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          // {
+          //   to: '/pw/reporter', //custom page with iframe - Works best
+          //   label: 'custom page',
+          //   position: 'left',
+          // },
+          // { to: '/blog', label: 'Blog', position: 'left' },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
           //   position: 'right',
           // },
           {
-            href: "https://github.com/Hopporg/hopporg-website-docusaurus",
+            href: "https://github.com/hoppjerka/hoppdocs",
             position: "right",
             className: "header-github-link",
             "aria-label": "GitHub repository",
@@ -173,7 +176,7 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Hoppsite. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Hoppjerka. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

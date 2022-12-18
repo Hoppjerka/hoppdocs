@@ -9,7 +9,7 @@ const config = {
   title: 'Hoppdocs',
   tagline: '',
   url: 'https://hoppjerka.github.io',
-  baseUrl: 'hoppdocs/',
+  baseUrl: '/hoppdocs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   //favicon: 'img/favicon.ico',
